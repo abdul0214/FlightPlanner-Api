@@ -1,0 +1,10 @@
+tequila:
+  host: https://tequila-api.kiwi.com/v2
+  apiKey:
+  maxStopOvers: 3
+
+airport-api:
+  url: https://airport.api.aero/airport/distance/%s/%s?user_key=%s
+  userKey:
+  distanceToMoon: 99999999999999999999999999999.0
+

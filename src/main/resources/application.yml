@@ -1,0 +1,33 @@
+#spring:
+#  datasource:
+#    password:
+#    url: jdbc:h2:mem:testdb
+#    username: sa
+#    driver-class-name: org.h2.Driver
+#  h2:
+#    console:
+#      enabled: true
+#  jpa:
+#    database-platform: org.hibernate.dialect.H2Dialect
+
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/flightplanner
+    username: flightplanner
+    password: flightplanner
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+        format_sql: false
+    hibernate:
+      ddl-auto: update
+  sql:
+    init:
+      mode: always
+tequila:
+  api_url: https://tequila-api.kiwi.com/v2/search
+  api_key: KEsHzlHicYIG4nPK8uzmUY-6l689DWfQ
+  content_type: application
+  auth_header_type: apikey
+  sync_true: ?sync=true
